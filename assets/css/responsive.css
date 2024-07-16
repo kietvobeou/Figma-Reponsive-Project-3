@@ -1,0 +1,58 @@
+/* PC */
+@media (min-width: 992px) {
+}
+
+/* Tablet & Mobile */
+@media (max-width: 991.98px) {
+  /* An Navbar */
+  .navbar {
+    display: none;
+  }
+  /* Chuyen Logo vao giua */
+  .header-top {
+    position: relative;
+  }
+  .header__logo {
+    position: absolute;
+    left: 50%;
+    translate: -50% -50%;
+  }
+  .menu-header__icon {
+    position: absolute;
+    top: 38px;
+    left: 26px;
+    color: #fff;
+    width: 24px;
+  }
+  /* overlay */
+  .menu-overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    inset: 0;
+    z-index: 1;
+    /* An overlay di */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.25s;
+  }
+
+  /* Ktra xem menu-checkbox co duoc check ko */
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Tablet*/
+@media (min-width: 768px) and (max-width: 991.98) {
+}
+
+/* Mobile */
+@media (max-width: 767.98) {
+}
+
+.main,
+footer,
+.hero {
+  display: none;
+}
